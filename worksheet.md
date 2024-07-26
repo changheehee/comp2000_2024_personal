@@ -18,6 +18,16 @@ And answer the following questions about them:
   * Are either/both of these projects active at the moment? 🤔 If not, what do you think happened?
   * 🤔 Which file in each project has had the most activity?
 
+repository A (Bitbucket):
+
+- The last person to commit: Matthew Roberts
+- First person to commit: Matthew Roberts
+
+repository B (GitHub) (according to GitHub repository initial commit history):
+
+- The last person to commit: Dave Pearce 
+- First person to commit: Dave Pearce
+
 # Task 2
 
 The repository you just cloned is a VSCode project, so lets work with it.  It currently will print "Hello World" message to the console when run.
