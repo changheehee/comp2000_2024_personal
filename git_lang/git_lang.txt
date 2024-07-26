@@ -1,3 +1,6 @@
+PS C:\Windows\system32> cd "C:\Users\user\Desktop\Uni Contents\2024_2\2000\comp2000_2024"
+
+
 Add and push new changes
 
 git add .
