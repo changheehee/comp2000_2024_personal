@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
-public class Main {
+public class Main { 
     public static void main(String[] args) throws Exception {
         System.out.println("Red vs. Blue");
 
