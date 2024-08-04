@@ -52,8 +52,8 @@ class Grid {
         cells = new Cell[GRID_SIZE][GRID_SIZE];
         for (int row = 0; row < GRID_SIZE; row++) {
             for (int col = 0; col < GRID_SIZE; col++) {
-                int x = OFFSET + col * Cell.SIZE;
-                int y = OFFSET + row * Cell.SIZE;
+                int x = OFFSET + col * Cell.getSize;
+                int y = OFFSET + row * Cell.getSize;
                 cells[row][col] = new Cell(x, y);
             }
         }
@@ -71,9 +71,9 @@ class Grid {
         for (int row = 0; row < GRID_SIZE; row++) {
             for (int col = 0; col < GRID_SIZE; col++) {
                 Cell cell = cells[row][col];
-                int cellX = OFFSET + col * Cell.SIZE;
-                int cellY = OFFSET + row * Cell.SIZE;
-                cell.setHighlighted(mouseX >= cellX && mouseX < cellX + Cell.SIZE && mouseY >= cellY && mouseY < cellY + Cell.SIZE);
+                int cellX = OFFSET + col * Cell.getSize;
+                int cellY = OFFSET + row * Cell.getSize;
+                cell.setHighlighted(mouseX >= cellX && mouseX < cellX + Cell.getSize && mouseY >= cellY && mouseY < cellY + Cell.getSize);
             }
         }
     }
