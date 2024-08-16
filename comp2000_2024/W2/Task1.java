@@ -29,7 +29,7 @@ public class Task1 extends JPanel {
         addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseMoved(MouseEvent e) {
-                if (mousePosition.size() >= pointSize) { // If the number of points over the size of the mouse position...
+                if (mousePosition.size() >= pointSize) { // If the number of points over the size of the mouse position....
                     mousePosition.poll();  // remove Oldest point 
                 }
                 mousePosition.add(e.getPoint()); // add current mouse position to Queue

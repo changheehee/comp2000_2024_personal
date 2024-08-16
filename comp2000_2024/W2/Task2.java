@@ -25,7 +25,7 @@ public class Task2 extends JPanel {
         addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseMoved(MouseEvent e) {
-                if (mousePosition.size() >= pointSize) { // If the number of points over the size of the mouse position...
+                if (mousePosition.size() >= pointSize) { // If the number of points over the size of the mouse position.....
                     mousePosition.poll();  // remove Oldest point 
                     // System.out.println("Oldest point removed / [" + mousePosition.size() + "]"); // for debug
                 }
