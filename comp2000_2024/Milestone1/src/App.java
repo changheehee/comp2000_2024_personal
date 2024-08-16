@@ -1,10 +1,17 @@
 //Libraries
-import java.awt.*;
+import java.awt.AlphaComposite;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Point;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 import java.util.LinkedList;
 import java.util.Queue;
-import javax.swing.*;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class App extends JPanel {
     private static int pointSize = 100; // number of the point
@@ -18,7 +25,7 @@ public class App extends JPanel {
         addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseMoved(MouseEvent e) {
-                if (mousePosition.size() >= pointSize) { // If the number of points over the size of the mouse position...
+                if (mousePosition.size() >= pointSize) { // If the number of points over the size of the mouse position....
                     mousePosition.poll();  // remove Oldest point 
                     // System.out.println("Oldest point removed / [" + mousePosition.size() + "]"); // for debug
                 }
