@@ -13,19 +13,19 @@ import java.util.Queue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class App extends JPanel {
+public class Task2 extends JPanel {
     private static int pointSize = 100; // number of the point
     private Queue<Point> mousePosition = new LinkedList<>(); // save mouse traces
     private Point currentMousePosition = null; // current mouse coordinates
 
-    public App() {
+    public Task2() {
         setBackground(Color.WHITE); // set background color
         setPreferredSize(new Dimension(600, 600)); // starting window size >> 600 x 600
 
         addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseMoved(MouseEvent e) {
-                if (mousePosition.size() >= pointSize) { // If the number of points over the size of the mouse position....
+                if (mousePosition.size() >= pointSize) { // If the number of points over the size of the mouse position...
                     mousePosition.poll();  // remove Oldest point 
                     // System.out.println("Oldest point removed / [" + mousePosition.size() + "]"); // for debug
                 }
@@ -71,7 +71,7 @@ public class App extends JPanel {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Assignment1_Milestone1");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.add(new App());
+        frame.add(new Task2());
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);      
